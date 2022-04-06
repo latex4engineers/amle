@@ -1,0 +1,21 @@
+\documentclass[12pt,a4paper]{scrbook}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{acronym}
+\begin{document}
+\tableofcontents
+
+\chapter*{Abkürzungen}
+\addcontentsline{toc}{chapter}{Abkürzungen} 
+\begin{acronym}
+	\acro{cnc}[CNC]{Computerized Numerical Control}
+	\acro{sps}[SPS]{Speicherprogrammierbare Steuerung}
+\end{acronym}
+
+\chapter{Erstes Kapitel}
+...
+
+Eine \ac{sps} ist ... 
+
+Eine \ac{cnc} benötigt eine \ac{sps} zur ... 
+\end{document}

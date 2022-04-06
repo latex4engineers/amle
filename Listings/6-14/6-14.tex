@@ -1,0 +1,16 @@
+\documentclass[12pt,a5paper]{article}
+\thispagestyle{empty}
+\usepackage[left=2.00cm, right=2.00cm, top=2.00cm, bottom=9.00cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[style=authortitle]{biblatex}
+\addbibresource{meine-literatur.bib}
+\begin{document}
+... eine Fußnote mit Kurzbeleg.\footcite[2]{Oechsner.2015}
+... und eine weitere Fußnote mit Kurzbeleg\autocite[2]{Oechsner.2015}.
+... und eine Fußnote mit vollständiger Quellenangabe. \footfullcite[2]{Oechsner.2015}
+
+und Fußnoten mit mehreren Quellen: eins\autocite{Muster.2020, Oechsner.2015} zwei\footcite{Muster.2020, Oechsner.2015} drei\footfullcite{Muster.2020, Oechsner.2015}
+\end{document}
+
+

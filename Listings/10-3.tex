@@ -1,0 +1,27 @@
+\documentclass[12pt,a4paper]{scrbook}
+\usepackage{geometry}
+\geometry{left=2.00cm, right=2.00cm, top=2.00cm, bottom=2.00cm}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\pagestyle{empty}
+
+\begin{document}
+	
+\parbox{4cm}{Dies ist ein Beispieltext in einer Box}
+\vspace{1cm}
+
+\begin{minipage}{4cm}
+	Dies ist ein Beispieltext in einer Box
+\end{minipage}
+\vspace{1cm}
+
+\framebox[5cm][l]{
+	\parbox[c][5cm][t]{4cm}{Dies ist ein Beispieltext in einer Box. Dies ist ein Beispieltext in einer Box. Dies ist ein Beispieltext in einer Box. Dies ist ein Beispieltext in einer Box. Dies ist ein Beispieltext in einer Box.}
+}
+\vspace{1cm}
+
+\framebox[5cm][s]{
+	\parbox[c][5cm][c]{4cm}{Dies ist ein Beispieltext in einer Box. Dies ist ein Beispieltext in einer Box. Dies ist ein Beispieltext in einer Box. Dies ist ein Beispieltext in einer Box. Dies ist ein Beispieltext in einer Box.}
+}
+
+\end{document}

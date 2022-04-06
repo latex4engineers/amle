@@ -1,0 +1,32 @@
+\documentclass[12pt,a4paper]{scrbook}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{lmodern}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+\usepackage[intoc]{nomencl}
+\renewcommand{\nomname}{Symbolverzeichnis}
+\setlength{\nomlabelwidth}{.20\hsize}
+\renewcommand{\nomlabel}[1]{#1 \dotfill}
+\makenomenclature
+
+\begin{document}
+	\tableofcontents
+	% % % % % % % % % % % % % % % % % % % % % %
+	% Stichwortverzeichnis mit Paket nomencl %
+	% % % % % % % % % % % % % % % % % % % % % % 
+	% makeindex %.nlo -s nomencl.ist -o %.nls %
+	\printnomenclature
+	\cleardoublepage
+	
+	\nomenclature[]{$\alpha$}{Drehwinkel um die $x$-Achse}
+	\nomenclature[]{$\beta$}{Drehwinkel um die $y$-Achse}
+	\nomenclature[]{$\gamma$}{Drehwinkel um die $z$-Achse}
+	\nomenclature[]{$\vec{F}$}{Kraft}
+	\nomenclature[]{$\vec{v}$}{Geschwindigkeit}
+	% % % % % % % % % % % % % % % % % % % % % %
+\end{document}

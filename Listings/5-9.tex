@@ -1,0 +1,34 @@
+\documentclass[12pt,a5paper]{book}
+\thispagestyle{empty}
+\usepackage[left=2.00cm, right=2.00cm, top=2.00cm, bottom=2.00cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\DeclareMathOperator{\grad}{grad}
+\begin{document}
+Ableiten
+\begin{align}
+a(t) &= \dot{v}(t) = \ddot{s}(t)  \\
+a(t) &= v'(t) = s''(t)  \\
+v &= \frac{\Delta s}{\Delta t} = \frac{s_2 - s_1}{t_2 - t_1} \\
+a(t) &= \frac{d}{dt} v(t)
+\end{align}
+
+Partiell ableiten
+\begin{align}
+\frac{\partial^{2}f}{\partial x_i \partial x_j} &= \frac{\partial^{2}f}{\partial x_j \partial x_i} \\
+\grad(f) &= \nabla f:=  \Biggl( \frac{\partial f}{\partial x_1}, \ldots, \frac{\partial f}{\partial x_n} \Biggr)^T
+\end{align}
+
+Nullstellen der Funktion $f(x) = x^2 + px + q$ bestimmen
+\begin{equation}
+x_{1,2} = - \left( \frac{p}{2} \right) \pm \sqrt{ \left( \frac{p}{2}\right) ^2 - q}
+\end{equation}
+
+Nullstellen der Funktion $f(x) = ax^2 + bx + c$ bestimmen
+\begin{equation}
+x_{1,2} = \frac{-b \pm \sqrt{b^2-4ac}}{2a}
+\end{equation}
+\end{document}

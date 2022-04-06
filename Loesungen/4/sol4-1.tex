@@ -1,0 +1,21 @@
+\documentclass[12pt,a4paper,final]{scrbook}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+
+\usepackage{graphicx}
+\usepackage{blindtext}
+
+\begin{document}
+\chapter{Einführung}
+\blindtext
+Abbildung \ref{fig:Nikolaushaus} zeigt das Haus vom Nikolaus. 
+
+\begin{figure}[b]
+	\centering
+	\includegraphics[width=2.5cm]{house.png}
+	\caption{Das Haus vom Nikolaus}
+	\label{fig:Nikolaushaus}
+\end{figure}
+
+\blindtext
+\end{document}

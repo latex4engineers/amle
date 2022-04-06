@@ -1,0 +1,54 @@
+\documentclass[12pt,a4paper,final]{scrbook}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{lmodern}
+
+\usepackage{hyperref}
+\hypersetup{
+	linkbordercolor={1 0 0},
+	citebordercolor={0 0 1},
+	urlbordercolor={0 1 0}
+}
+
+\begin{filecontents}{literatur.bib}
+@article{linuxcncrte,
+author={Wings, Elmar and Müller, Marcel and Rochler, Marc},
+year={2015},
+journal={The International Journal of Advanced Manufacturing Technology},
+volume={78},
+number={9-12},
+title={{Integration of real-time Ethernet in LinuxCNC}},
+publisher={Springer London},
+pages={1837-1846}
+}
+@book{computernetze,
+author = {Patrick-Benjamin Bök and Andreas Noack and Marcel Müller and Daniel Behnke},
+title = {Computernetze und Internet of Things},
+year = {2020},
+month = {09},
+day = {11},
+subtitle = {Technische Grundlagen und Spezialwissen},
+publisher = {Springer Vieweg, Wiesbaden},
+isbn = {978-3-658-29409-0}
+}
+\end{filecontents}
+
+\usepackage[style=ieee-alphabetic]{biblatex}
+\addbibresource{literatur.bib}
+
+\begin{document}
+
+\chapter{Erstes Kapitel}\label{chap:eins}
+In Kapitel \ref{chap:eins} befindet sich die Einleitung. 
+In Kapitel \ref{chap:zwei} wird der Stand der Technik beschrieben.  
+SpringerLink\footnote{\url{https://link.springer.com/}} bietet viele interessante Fachbücher zum Download an. 
+Die Datenbank IEEE Xplore\footnote{\url{https://ieeexplore.ieee.org/}} bietet viele interessante Artikel zum Download an. 
+
+\chapter{Zweites Kapitel}\label{chap:zwei}
+In dem Artikel \cite{linuxcncrte} befassen sich die Autoren mit...
+In dem Buch \cite{computernetze} befassen sich die Autoren mit...
+
+\printbibliography
+
+\end{document}

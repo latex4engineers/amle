@@ -1,0 +1,47 @@
+\documentclass[12pt,a4paper]{scrbook}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{graphicx}
+\usepackage{geometry}
+\geometry{left=2.00cm, right=2.00cm, top=2.00cm, bottom=2.00cm}
+\pagestyle{empty}
+
+\begin{document}
+Dies ist der Text, der vor dem Zitat steht. 
+Dies ist der Text, der vor dem Zitat steht. 
+Dies ist der Text, der vor dem Zitat steht. 
+
+\begin{quote}
+	Dies ist ein Zitat. 
+	Dies ist ein Zitat. 
+	Dies ist ein Zitat. 
+	Dies ist ein Zitat. 
+	Dies ist ein Zitat. 
+	Dies ist ein Zitat. 
+	Dies ist ein Zitat. 
+\end{quote}
+
+\renewenvironment{quote}{%
+	\begin{quotation}%
+	\noindent\glqq\ignorespaces}{%
+	\ignorespaces\grqq\end{quotation}%
+}%
+
+Dies ist der Text, der zwischen den Zitaten steht. 
+Dies ist der Text, der zwischen den Zitaten steht.
+Dies ist der Text, der zwischen den Zitaten steht.
+
+\begin{quote}
+	Dies ist ein Zitat. 
+	Dies ist ein Zitat. 
+	Dies ist ein Zitat. 
+	Dies ist ein Zitat. 
+	Dies ist ein Zitat. 
+	Dies ist ein Zitat. 
+	Dies ist ein Zitat.%
+\end{quote}
+
+Dies ist der Text, der nach dem Zitat steht. 
+Dies ist der Text, der nach dem Zitat steht. 
+Dies ist der Text, der nach dem Zitat steht. 
+\end{document}

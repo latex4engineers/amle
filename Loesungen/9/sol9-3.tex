@@ -1,0 +1,30 @@
+\documentclass[12pt,a4paper]{scrbook}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{xcolor}
+
+% Darstellung von Python-Code
+\newcommand{\PYTHON}[1]{\textcolor{green}{\ttfamily #1}}
+
+% Umgebung zur Erläuterung von Python-Befehln
+\newenvironment{PythonDef}%
+{%
+\begin{tabular}{l|l}
+    \textbf{Befehl} & \textbf{Erläuterung} \\ \hline 
+}%
+{%
+\end{tabular}%
+}
+
+
+\begin{document}
+
+\chapter{Python-Befehle}
+
+\begin{PythonDef}
+ \PYTHON{import} & Laden einer Bibliothek \\ 
+ \PYTHON{def}    & Definition einer Funktion \\
+\end{PythonDef}
+
+\end{document}

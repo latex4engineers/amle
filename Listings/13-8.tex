@@ -1,0 +1,38 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{graphicx}
+\usepackage{geometry}
+\geometry{left=2.00cm, right=2.00cm, top=2.00cm, bottom=2.00cm}
+\pagestyle{empty}
+
+\usepackage{gnuplottex}
+\begin{document}
+\begin{gnuplot}[terminal=epslatex, scale=1.2]
+	set title 'Plot einer Geraden' # Diagrammtitel
+	set output "plot-ausgabe-datei.tex" # Ausgabedatei
+	set datafile separator ',' # Spaltenseparator
+	set xrange [40:160] # Dargestellter Diagrammbereich x-Achse
+	set yrange [40:160] # Dargestellter Diagrammbereich y-Achse
+	# Gitter/Raster: Hauptteilung mit start, schrittweite, stop
+	set xtics 40,10,160 # Hauptteilung x-Achse 
+	set ytics 40,10,160 # Hauptteilung y-Achse
+	# Zwischenteilung: Anzahl der Teilstriche + Hauptstrich
+	set mxtics 10 # Zwischenteilung x-Achse 
+	set mytics 10 # Zwischenteilung y-Achse 
+	set xlabel '$x$' # Beschriftung x-Achse
+	set ylabel '$g(x)$' # Beschriftung y-Achse
+	set size 1.3,1 # Verhältnis Breite zu Höhe
+	show grid # Rasteranzeige aktivieren
+	# Formatierung des Gitters, line type, line width, line color
+	set grid ytics lt 1 lw 1 lc rgb '#bbbbbb' # Formatierung x
+	set grid xtics lt 1 lw 0.5 lc rgb '#bbbbbb' # Formatierung y
+	set key left top Left # Position der Legende
+	show key # Legende darstellen
+	g(x)=x # Funktionsdefinition
+	plot g(x) with lines lc rgb '#000000' lw 1 title '$g_1(x)$'
+\end{gnuplot}
+%\gnuplotloadfile[terminal=epslatex, scale=1.2]{gnuplotdatei.gnuplot}
+\input{plot-ausgabe-datei.tex}
+\end{document}
+

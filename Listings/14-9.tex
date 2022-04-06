@@ -1,0 +1,35 @@
+\documentclass{beamer}
+\usepackage[ngerman]{babel}
+\usetheme{Madrid}
+\title{Masterarbeit}
+\subtitle{Titel meiner Masterarbeit}
+\author{Max Mustermann}
+\date{\today}
+\institute{Hochschule Musterstadt}
+\setbeamercovered{transparent}
+\begin{document}
+	
+\section{Einführung}
+\begin{frame}
+\frametitle{Titel}
+\framesubtitle{Untertitel}
+%Inhalt der Folie
+\begin{columns}
+\column{.4\textwidth}
+\begin{itemize}
+	\item<1-> Stichpunkt 1 
+	\item<2-> Stichpunkt 2 
+	\item<3-> Stichpunkt 3
+	\item<4-> ...
+\end{itemize}
+
+\column{.6\textwidth}
+\uncover<1->{Uncover1a,}\uncover<2->{Uncover2a,}\uncover<3->{Uncover3a}\\
+\uncover<3->{Uncover3b,}\uncover<2->{Uncover2b,}\uncover<1->{Uncover1b}\\
+\visible<1->{Visible1a,}\visible<2->{Visible2a,}\visible<3->{Visible3a}\\
+\visible<3->{Visible1b,}\visible<2->{Visible2b,}\visible<1->{Visible1b}\\
+\only<1->{Only1a,}\only<2->{Only2a,}\only<3->{Only3a}\\
+\only<3->{Only3b,}\only<2->{Only2b,}\only<1->{Only1b}
+\end{columns}
+\end{frame}
+\end{document}

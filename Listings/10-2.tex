@@ -1,0 +1,34 @@
+\documentclass[12pt,a4paper]{scrbook}
+\usepackage{geometry}
+\geometry{left=2.00cm, right=2.00cm, top=2.00cm, bottom=2.00cm}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\pagestyle{empty}
+
+\begin{document}
+	
+\mbox{Dies ist ein Beispieltext in einer Box}
+\vspace{1cm}
+
+\fbox{Dies ist ein Beispieltext in einer Box}
+\vspace{1cm}
+
+\makebox[10cm][s]{Dies ist ein Beispieltext in einer Box}
+\vspace{1cm}
+
+\framebox[10cm][l]{Dies ist ein Beispieltext in einer Box}
+\vspace{1cm}
+
+\framebox[10cm][c]{Dies ist ein Beispieltext in einer Box}
+\vspace{1cm}
+
+\framebox[10cm][r]{Dies ist ein Beispieltext in einer Box}
+\vspace{1cm}
+
+\framebox[10cm][s]{Dies ist ein Beispieltext in einer Box}
+\vspace{1cm}
+
+\framebox[\width][s]{Dies ist ein Beispieltext in einer Box, der zu einer ungewollten Randüberschreitung führt, da er für diese Box viel zu lang ist.}
+\vspace{1cm}
+
+\end{document}

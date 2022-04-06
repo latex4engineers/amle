@@ -1,0 +1,30 @@
+\documentclass[12pt,a4paper]{scrbook}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{graphicx}
+\usepackage{geometry}
+\geometry{left=2.00cm, right=2.00cm, top=2.00cm, bottom=2.00cm}
+\pagestyle{empty}
+
+\usepackage{xcolor}
+
+\newenvironment{Zusammenfassung}{%
+	\vspace{0.5cm}%
+	\par\noindent%
+	\colorbox{lightgray}{%
+		\parbox[l][0.5cm][c]{\textwidth}{%
+			\textbf{Erkenntnis}}}%
+	\vspace{0.5cm}%
+}%
+{{\newline\color{lightgray}\rule{\textwidth}{1pt}}\vskip15pt}
+
+\begin{document}
+Dies ist Text aus dem Kapitel, der vor der neuen Umgebung steht. 
+Dies ist Text aus dem Kapitel, der vor der neuen Umgebung steht.
+\begin{Zusammenfassung}
+	Dies ist Text, der in der neuen Umgebung steht. 
+	Dies ist Text, der in der neuen Umgebung steht. 
+\end{Zusammenfassung}
+Dies ist Text aus dem Kapitel, der nach der neuen Umgebung steht. 
+Dies ist Text aus dem Kapitel, der nach der neuen Umgebung steht. 
+\end{document}

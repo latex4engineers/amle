@@ -1,0 +1,29 @@
+\documentclass[12pt,a4paper]{scrbook}
+\KOMAoptions{headinclude,DIV=15,BCOR=8.25mm}
+\usepackage{scrlayer-scrpage}
+\pagestyle{scrheadings}
+\clearpairofpagestyles
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{blindtext}
+
+\ihead{\normalfont \headmark}
+\ohead{\normalfont \pagemark}
+
+%\cefoot{\normalfont \pagemark~von~\pageref{LetzteSeite}}
+%\cofoot{\normalfont \pagemark~von~\pageref{LetzteSeite}}
+%\cfoot*{\pagemark}
+\cfoot[\pagemark]{\normalfont \pagemark~von~\pageref{LetzteSeite}}
+
+\lefoot{\normalfont Mein Name}
+\lofoot{\normalfont Mein Name}
+\refoot{\normalfont Datum}
+\rofoot{\normalfont Datum}
+
+\KOMAoptions{headsepline=0.4pt}
+\KOMAoptions{footsepline=0.4pt}
+
+\begin{document}
+\blinddocument
+\label{LetzteSeite}
+\end{document}

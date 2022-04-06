@@ -1,0 +1,27 @@
+\documentclass[12pt,a4paper]{scrbook}
+\usepackage{geometry}
+\geometry{left=2.00cm, right=2.00cm, top=2.00cm, bottom=2.00cm}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\pagestyle{empty}
+
+\usepackage{xcolor}
+\definecolor{meinHellesGrau}{RGB}{242,242,242}
+
+\begin{document}
+
+\colorbox{lightgray}{Dies ist ein Beispieltext in einer Box}
+
+\vspace{1cm}
+
+\fcolorbox{darkgray}{lightgray}{Dies ist ein Beispieltext in einer Box}
+
+\vspace{1cm}
+
+\fcolorbox{darkgray}{meinHellesGrau}{
+	\parbox[c][5cm][c]{4cm}{
+		Dies ist ein Beispieltext in einer Box. Dies ist ein Beispieltext in einer Box. Dies ist ein Beispieltext in einer Box. Dies ist ein Beispieltext in einer Box. Dies ist ein Beispieltext in einer Box.
+	}
+}
+
+\end{document}

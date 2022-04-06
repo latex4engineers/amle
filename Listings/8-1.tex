@@ -1,0 +1,21 @@
+\documentclass[12pt,a4paper]{book}
+\usepackage[usegeometry]{typearea}
+\usepackage[includefoot,includehead]{geometry}
+\geometry{left=2.00cm, right=2.00cm, top=2.00cm, bottom=2.00cm}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{afterpage}
+\usepackage{blindtext}
+\begin{document}
+\blinddocument
+\afterpage{
+	\clearpage
+	\KOMAoptions{paper=A4,paper=landscape}
+	\KOMAoptions{footinclude,headinclude,DIV=13}
+	%\thispagestyle{empty}
+	\input{8-1-tabelle}
+	\clearpage
+	\thispagestyle{empty}
+}
+\blinddocument
+\end{document}

@@ -1,0 +1,28 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{graphicx}
+\usepackage{geometry}
+\geometry{left=2.00cm, right=2.00cm, top=2.00cm, bottom=2.00cm}
+\pagestyle{empty}
+
+\usepackage{pgfplots}
+\begin{document}
+\begin{tikzpicture}
+	\begin{axis}[
+	title={Plot aus zwei CSV-Dateien},
+	xlabel={x-Achse},
+	ylabel={y-Achse},
+	xmin=0,
+	ymin=0,
+	xmax=5,
+	ymax=25,
+	grid=major
+	]
+	\addplot[mark=triangle] table [col sep=comma] {data.csv};
+	\addlegendentry{Graph 1}
+	\addplot[mark=diamond] table [col sep=comma] {data2.csv};
+	\addlegendentry{Graph 2}
+	\end{axis}
+\end{tikzpicture}
+\end{document}

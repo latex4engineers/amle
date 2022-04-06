@@ -1,0 +1,35 @@
+\documentclass[12pt,a4paper]{scrbook}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{lmodern}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+\usepackage{tabularx}
+\usepackage{booktabs}
+
+\begin{document}
+\tableofcontents
+% % % % % % % % % % % % % % % % % % % % % %
+% Stichwortverzeichnis mit Paket tabularx %
+% % % % % % % % % % % % % % % % % % % % % %
+\chapter*{Symbolverzeichnis}
+\addcontentsline{toc}{chapter}{Symbolverzeichnis}
+\begin{table}[h]
+	\begin{tabularx}{\textwidth}{cX}
+		\toprule
+		\textbf{Symbol} & \textbf{Beschreibung} \\
+		\midrule
+		$\alpha$		&	Drehwinkel um die x-Achse \\
+		$\beta$		&	Drehwinkel um die y-Achse \\
+		$\gamma$		&	Drehwinkel um die z-Achse \\
+		$\vec{F}$	&	Kraft \\
+		$\vec{v}$	&	Geschwindigkeit	\\
+		\bottomrule
+	\end{tabularx}
+\end{table}
+% % % % % % % % % % % % % % % % % % % % % %
+\end{document}

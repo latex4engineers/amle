@@ -1,0 +1,24 @@
+\documentclass[12pt,a5paper]{scrbook}
+\usepackage{geometry}
+\geometry{left=2.00cm, right=2.00cm, top=2.00cm, bottom=2.00cm}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\pagestyle{empty}
+
+\usepackage{listings}
+
+\begin{document}
+	
+\begin{lstlisting}[numbers=left, language={[ansi]C}, caption={Hello World in C}, label=lst:hello-world]
+#include <stdio.h>
+// Beispiel: Hello World in C
+int main()
+{
+printf("Hello world!\n");
+return 0;
+}
+\end{lstlisting}
+
+Listing \ref{lst:hello-world} zeigt ein in der Programmiersprache C geschriebenes Hello-World-Programm.
+
+\end{document}

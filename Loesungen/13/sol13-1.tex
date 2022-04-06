@@ -1,0 +1,22 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{graphicx}
+\usepackage{geometry}
+\geometry{left=2.00cm, right=2.00cm, top=2.00cm, bottom=2.00cm}
+\pagestyle{empty}
+
+\usepackage{pgfplots}
+
+\begin{document}
+	
+\begin{tikzpicture}
+	\begin{axis}[domain=-2*pi:2*pi,ymin=-1.2,ymax=2]
+		\addplot[solid,blue,mark=+]{sin(deg(x))};
+		\addlegendentry{$f_1(x)=sin(x)$};
+		\addplot[solid,red,mark=x]{cos(deg(x))};
+		\addlegendentry{$f_2(x)=cos(x)$};
+	\end{axis}
+\end{tikzpicture}
+
+\end{document}

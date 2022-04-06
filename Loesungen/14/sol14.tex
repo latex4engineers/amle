@@ -1,0 +1,39 @@
+\documentclass{beamer}
+\usepackage[ngerman]{babel}
+\title{Masterarbeit}
+\subtitle{Titel meiner Masterarbeit}
+\author{Max Mustermann}
+\date{02. Februar 2022}
+\usetheme{CambridgeUS}
+\setbeamercovered{transparent}
+\begin{document}
+
+\begin{frame}
+	\titlepage
+\end{frame}
+
+\begin{frame}
+	\frametitle{Inhaltsverzeichnis}
+	\tableofcontents
+\end{frame}
+
+\section{Häuser}
+\begin{frame}
+\frametitle{\insertsection}
+\framesubtitle{Das Haus vom Nikolaus}
+\begin{columns}
+	\column{.5\textwidth}
+	\centering
+	\includegraphics[width=2cm]{house.png}
+	\column{.5\textwidth}
+	\begin{itemize}
+		\item<1-> Stichpunkt 1
+		\item<2-> Stichpunkt 2
+		\item<3-> Stichpunkt 3
+		\item<4-> Stichpunkt 4
+		\item<5-> Stichpunkt 5
+	\end{itemize}
+\end{columns}
+\end{frame}
+
+\end{document}

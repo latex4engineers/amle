@@ -1,0 +1,31 @@
+\documentclass[12pt,a5paper]{scrbook}
+\usepackage{geometry}
+\geometry{left=2.00cm, right=2.00cm, top=2.00cm, bottom=2.00cm}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\pagestyle{empty}
+
+\usepackage{xcolor}
+\usepackage{listings}
+
+\lstset{
+	language=C,
+	keywordstyle=\bfseries, 
+	commentstyle=\color{gray}, 
+	stringstyle=\ttfamily, 
+	showstringspaces=false,
+	frame=lines, % Linien: oben und unten
+	framesep=5pt, % Abstand zum Rahmen
+	framexleftmargin=5pt, % Abstand nach Links
+	numbers=none, 
+	backgroundcolor=\color{gray!10}, % Hintergrundfarbe
+	captionpos=b, 
+	morekeywords={printf}
+}
+
+\begin{document}
+	
+\lstinputlisting[caption={Hello World in C}, label=lst:hello-world]{hello-world.c}
+
+\end{document}
+

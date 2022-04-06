@@ -1,0 +1,14 @@
+\documentclass[12pt,a5paper]{article}
+\thispagestyle{empty}
+\usepackage[left=2.00cm, right=2.00cm, top=2.00cm, bottom=2.00cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{csquotes}
+\usepackage[style=ieee-alphabetic]{biblatex}
+\addbibresource{meine-literatur.bib}
+\begin{document}
+Hier wird ein Buch als Quelle angegeben \cite[2]{Oechsner.2015}. 
+Hier wird ein Artikel als Quelle angegeben \cite{Muster.2020}. 
+Hier werden ein Buch und ein Artikel als Quelle angegeben \cite{Oechsner.2015, Muster.2020}. 
+\printbibliography
+\end{document}

@@ -1,0 +1,60 @@
+\documentclass[12pt,a4paper,final]{scrbook}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{lmodern}
+
+\usepackage{blindtext}
+\usepackage{hyperref}
+
+\begin{filecontents}{literatur.bib}
+@article{linuxcncrte,
+author={Wings, Elmar and Müller, Marcel and Rochler, Marc},
+year={2015},
+journal={The International Journal of Advanced Manufacturing Technology},
+volume={78},
+number={9-12},
+title={{Integration of real-time Ethernet in LinuxCNC}},
+publisher={Springer London},
+pages={1837-1846}
+}
+@book{computernetze,
+author = {Patrick-Benjamin Bök and Andreas Noack and Marcel Müller and Daniel Behnke},
+title = {Computernetze und Internet of Things},
+year = {2020},
+month = {09},
+day = {11},
+subtitle = {Technische Grundlagen und Spezialwissen},
+publisher = {Springer Vieweg, Wiesbaden},
+isbn = {978-3-658-29409-0}
+}
+\end{filecontents}
+
+\usepackage[style=ieee-alphabetic]{biblatex}
+\addbibresource{literatur.bib}
+
+\begin{document}
+	
+\chapter{Erstes Kapitel}\label{chap:eins}
+In Kapitel \ref{chap:eins} befindet sich die Einleitung. 
+Die Abschnitte \ref{sec:einsA} und \ref{sec:einsB} führen in das Thema ein. 
+SpringerLink\footnote{\url{https://link.springer.com/}} bietet viele interessante Fachbücher zum Download an. 
+Die Datenbank IEEE Xplore\footnote{\url{https://ieeexplore.ieee.org/}} bietet viele interessante Artikel zum Download an. 
+\section{Erster Abschnitt im ersten Kapitel}\label{sec:einsA}
+\blindtext
+\section{Zweiter Abschnitt im ersten Kapitel}\label{sec:einsB}
+\blindtext
+
+\chapter{Zweites Kapitel}\label{chap:zwei}
+In Kapitel \ref{chap:zwei} wird ...
+Abschnitt \ref{sec:zweiA} und Abschnitt \ref{sec:zweiB} ...
+In dem Artikel \cite{linuxcncrte} ...
+In dem Buch \cite{computernetze} ...
+\section{Erster Abschnitt im zweiten Kapitel}\label{sec:zweiA}
+\blindtext
+\section{Zweiter Abschnitt im zweiten Kapitel}\label{sec:zweiB}
+\blindtext
+
+\printbibliography
+
+\end{document}

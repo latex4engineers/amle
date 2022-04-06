@@ -1,0 +1,40 @@
+\documentclass[12pt,a4paper]{scrbook}
+\usepackage{geometry}
+\geometry{left=2.00cm, right=2.00cm, top=2.00cm, bottom=2.00cm}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\pagestyle{empty}
+
+\usepackage{fancybox}
+
+\begin{document}
+
+\ovalbox{{\Large Dies ist ein Beispieltext in einer Box}}
+
+\vspace{1cm}
+
+\Ovalbox{{\Large Dies ist ein Beispieltext in einer Box}}
+
+\vspace{1cm}
+
+\shadowbox{{\Large Dies ist ein Beispieltext in einer Box}}
+
+\vspace{1cm}
+
+\doublebox{{\Large Dies ist ein Beispieltext in einer Box}}
+
+\vspace{1cm}
+
+\cornersize{1.5}
+\Ovalbox{{\Large Dies ist ein Beispieltext in einer Box}}
+
+\vspace{1cm}
+
+\cornersize{.25}
+\Ovalbox{{\Large Dies ist ein Beispieltext in einer Box}}
+
+\vspace{1cm}
+
+\shadowbox{\parbox[c][4.5cm][c]{4cm}{Dies ist ein Beispieltext in einer Box. Dies ist ein Beispieltext in einer Box. Dies ist ein Beispieltext in einer Box. Dies ist ein Beispieltext in einer Box. Dies ist ein Beispieltext in einer Box.}}
+
+\end{document}

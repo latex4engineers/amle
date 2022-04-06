@@ -1,0 +1,36 @@
+\documentclass[12pt,a4paper]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{lmodern}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+\usepackage[left=2.00cm, right=2.00cm, top=2.00cm, bottom=2.00cm,includefoot]{geometry}
+
+%\usepackage[final]{listofsymbols} % ohne Makronamen ausgeben
+\usepackage[draft]{listofsymbols} % mit Makronamen (\symF,...) ausgeben
+
+\begin{document}
+\tableofcontents
+% % % % % % % % % % % % % % % % % % % % % % % % %
+% Stichwortverzeichnis mit Paket listofsymbols %
+% % % % % % % % % % % % % % % % % % % % % % % % %
+\cleardoublepage
+\renewcommand{\symheadingname}{Symbolverzeichnis}
+\opensymdef
+\addcontentsline{toc}{chapter}{Symbolverzeichnis}
+\newsym[Drehwinkel um die x-Achse]{syma}{\alpha}
+\newsym[Drehwinkel um die y-Achse]{symb}{\beta}
+\newsym[Drehwinkel um die z-Achse]{symc}{\gamma}
+\newsym[Kraft]{symF}{\vec{F}}
+\newsym[Geschwindigkeit]{symv}{\vec{v}}
+\closesymdef
+%\begin{equation}
+%\symF = m \cdot a
+%\end{equation}
+\listofsymbols
+% % % % % % % % % % % % % % % % % % % % % %
+\end{document}

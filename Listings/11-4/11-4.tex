@@ -1,0 +1,31 @@
+\documentclass[12pt,a5paper]{scrbook}
+\usepackage{geometry}
+\geometry{left=2.00cm, right=2.00cm, top=2.00cm, bottom=2.00cm}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\pagestyle{empty}
+
+\usepackage{xcolor}
+\usepackage{listings}
+
+\lstset{
+	language=Python,
+	keywordstyle=\bfseries, 
+	commentstyle=\color{gray}, 
+	stringstyle=\ttfamily, 
+	showstringspaces=false,
+	frame=shadowbox, % Schattierter Rahmen
+	rulesepcolor=\color{gray}, % Schattierter Rahmen
+	framesep=5pt, 
+	framexleftmargin=5pt, 
+	numbers=none, 
+	backgroundcolor=\color{white}, % Hintergrundfarbe
+	captionpos=b
+}
+
+\begin{document}
+	
+\lstinputlisting[caption={Hello World in Python}, label=lst:hello-world]{hello-world.py}
+
+\end{document}
+

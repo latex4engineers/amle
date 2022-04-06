@@ -1,0 +1,32 @@
+\documentclass[12pt,a4paper]{scrbook}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{graphicx}
+\usepackage{geometry}
+\geometry{left=2.00cm, right=2.00cm, top=2.00cm, bottom=2.00cm}
+\pagestyle{empty}
+
+\usepackage{xcolor}
+\definecolor{meinHellesGrau}{RGB}{242,242,242}
+
+\newenvironment{Zusammenfassung}[2][lightgray]{%
+	\def\Farbe{#1}%
+	\vspace{0.5cm}%
+	\par\noindent%
+	\colorbox{\Farbe}{%
+		\parbox[l][0.5cm][c]{\textwidth}{%
+			\textbf{#2}}}%
+	\vspace{0.5cm}%
+}%
+{{\newline\color{\Farbe}\rule{\textwidth}{1pt}}\vskip15pt}
+
+\begin{document}
+Dies ist Text aus dem Kapitel, der vor der neuen Umgebung steht. 
+Dies ist Text aus dem Kapitel, der vor der neuen Umgebung steht.
+\begin{Zusammenfassung}[meinHellesGrau]{Kurzfassung}
+	Dies ist Text, der in der neuen Umgebung steht. 
+	Dies ist Text, der in der neuen Umgebung steht. 
+\end{Zusammenfassung}
+Dies ist Text aus dem Kapitel, der nach der neuen Umgebung steht. 
+Dies ist Text aus dem Kapitel, der nach der neuen Umgebung steht. 
+\end{document}

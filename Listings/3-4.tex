@@ -1,0 +1,72 @@
+\documentclass[12pt,a5paper,final]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[left=2.00cm, right=2.00cm, top=2.00cm, bottom=2.00cm]{geometry}
+\author{Marcel Mueller}
+\title{Mein erster Aufsatz}
+
+\usepackage{longtable}
+\begin{document}
+Dies ist eine Referenz auf Tabelle \ref{tab:nahrungsmittel} von der ersten Seite. 
+\begin{longtable}{|l|l|l|}
+	\hline	
+	\textbf{Gemüse} & \textbf{Früchte}   & \textbf{Sonstiges} \\
+	\endfirsthead
+	
+	\multicolumn{3}{l}{
+		\textit{\tablename\ \thetable\  -- \textit{Fortsetzung von der vorherigen Seite}}} \\
+	\hline	
+	\textbf{Gemüse} & \textbf{Früchte}   & \textbf{Sonstiges} \\
+	\endhead
+
+	\multicolumn{3}{l}{
+		\textit{\tablename\ \thetable\ Fortsetzung auf der nächsten Seite}} \\
+	\endfoot
+	
+	\endlastfoot
+
+	\hline Karotten & Birnen  &  Käse\\
+	\hline	Paprika & Kirschen  & Fleisch \\
+	\hline Karotten & Birnen  &  Käse\\
+	\hline	Paprika & Kirschen  & Fleisch \\
+	\hline Karotten & Birnen  &  Käse\\
+	\hline	Paprika & Kirschen  & Fleisch \\
+	\hline Karotten & Birnen  &  Käse\\
+	\hline	Paprika & Kirschen  & Fleisch \\
+	\hline Karotten & Birnen  &  Käse\\
+	\hline	Paprika & Kirschen  & Fleisch \\
+	\hline Karotten & Birnen  &  Käse\\
+	\hline	Paprika & Kirschen  & Fleisch \\
+	\hline Karotten & Birnen  &  Käse\\
+	\hline	Paprika & Kirschen  & Fleisch \\
+	\hline Karotten & Birnen  &  Käse\\
+	\hline	Paprika & Kirschen  & Fleisch \\
+	\hline Karotten & Birnen  &  Käse\\
+	\hline	Paprika & Kirschen  & Fleisch \\
+	\hline Karotten & Birnen  &  Käse\\
+	\hline	Paprika & Kirschen  & Fleisch \\
+	\hline Karotten & Birnen  &  Käse\\
+	\hline	Paprika & Kirschen  & Fleisch \\
+	\hline Karotten & Birnen  &  Käse\\
+	\hline	Paprika & Kirschen  & Fleisch \\
+	\hline Karotten & Birnen  &  Käse\\
+	\hline	Paprika & Kirschen  & Fleisch \\
+	\hline Karotten & Birnen  &  Käse\\
+	\hline	Paprika & Kirschen  & Fleisch \\
+	\hline Karotten & Birnen  &  Käse\\
+	\hline	Paprika & Kirschen  & Fleisch \\
+	\hline Karotten & Birnen  &  Käse\\
+	\hline	Paprika & Kirschen  & Fleisch \\
+	\hline Karotten & Birnen  &  Käse\\
+	\hline	Paprika & Kirschen  & Fleisch \\
+	\hline Karotten & Birnen  &  Käse\\
+	\hline	Paprika & Kirschen  & Fleisch \\
+	\hline Karotten & Birnen  &  Käse\\
+	\hline	Paprika & Kirschen  & Fleisch \\
+	\hline
+	
+	\caption{Eine Tabelle mit Nahrungsmittel}
+	\label{tab:nahrungsmittel}
+\end{longtable}
+Dies ist eine Referenz auf Tabelle \ref{tab:nahrungsmittel} von der zweiten Seite. 
+\end{document}

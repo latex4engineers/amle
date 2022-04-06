@@ -1,0 +1,32 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{graphicx}
+\usepackage{geometry}
+\geometry{left=2.00cm, right=2.00cm, top=2.00cm, bottom=2.00cm}
+\pagestyle{empty}
+
+\usepackage{pgfplots}
+
+\begin{document}
+
+\begin{filecontents}{wegzeit.csv}
+Spalte1;Spalte2;Spalte3
+0;0;0
+1;1;1
+2;2;4
+3;3;9
+4;4;16
+5;5;25
+\end{filecontents}
+
+\begin{tikzpicture}
+	\begin{axis}[title={Weg-Zeit-Diagramm},xlabel={$Zeit~in~s$},ylabel={$Strecke~in~m$}]
+		\addplot[solid,black,mark=+] table [x=Spalte1,y=Spalte2,col sep=semicolon] {wegzeit.csv};
+		\addlegendentry{$s_1$};
+		\addplot[dashed,black,mark=x] table [x=Spalte1,y=Spalte3,col sep=semicolon] {wegzeit.csv};
+		\addlegendentry{$s_2$};
+	\end{axis}
+\end{tikzpicture}
+
+\end{document}

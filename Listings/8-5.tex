@@ -1,0 +1,25 @@
+\documentclass[12pt,a4paper]{book}
+\usepackage[includefoot,includehead]{geometry}
+\geometry{left=2.00cm, right=2.00cm, top=2.00cm, bottom=2.00cm}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{blindtext}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[LE]{\thepage}
+\fancyhead[RO]{\thepage}
+\fancyhead[LO]{\rightmark}
+\fancyhead[RE]{\leftmark}
+\fancyfoot{}
+\fancyfoot[L]{Mein Name}
+\fancyfoot[C]{\thepage\ von \pageref{LetzteSeite}}
+\fancyfoot[R]{Datum}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\begin{document}
+\blinddocument
+\label{LetzteSeite}
+\end{document}

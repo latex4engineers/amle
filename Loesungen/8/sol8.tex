@@ -1,0 +1,151 @@
+\documentclass[12pt,a4paper]{scrbook}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{lmodern}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+\usepackage{graphicx}
+
+\usepackage[left=2.50cm, right=2.50cm, top=2.00cm, bottom=2.00cm,
+bindingoffset=8mm, includehead, includefoot]{geometry} % Loesung 8.2
+
+\usepackage[onehalfspacing]{setspace} % Loesung 8.3
+\setlength{\parskip}{6pt} % Loesung 8.3
+\setlength{\parindent}{0pt} % Loesung 8.3
+
+\usepackage{fancyhdr} % Loesung 8.4
+\pagestyle{fancy} % Loesung 8.4
+\fancyhead{} % Loesung 8.4
+\fancyhead[RO]{\rightmark} % Loesung 8.4
+\fancyhead[LE]{\leftmark} % Loesung 8.4
+\fancyfoot{} % Loesung 8.4
+\fancyfoot[RO]{\thepage} % Loesung 8.4
+\fancyfoot[LE]{\thepage} % Loesung 8.4
+\renewcommand{\headrulewidth}{0.4pt} % Loesung 8.4
+%\renewcommand{\footrulewidth}{0.4pt} % Loesung 8.4
+
+\usepackage{blindtext}
+\usepackage{acronym}
+
+\usepackage[style=ieee-alphabetic]{biblatex}
+\addbibresource{literatur.bib}
+
+\usepackage{makeidx}
+\makeindex
+
+\usepackage[intoc]{nomencl}
+\renewcommand{\nomname}{Symbolverzeichnis}
+\renewcommand{\nomlabel}[1]{#1 \dotfill}
+\makenomenclature
+
+
+\begin{document}
+ 
+\begin{titlepage}
+     
+     \begin{flushleft} 
+         \includegraphics[width=7cm]{logo.png}
+     \end{flushleft} 
+     
+     \begin{flushright}
+         \vspace{2cm}
+         \LARGE \textsl{Bachelorarbeit}\\
+         \rule{0.6\textwidth}{0.4pt} ~\\
+         \vspace{0.5cm}
+         \textsf{\LARGE Beispiel eines Layouts für}\\
+         \textsf{\LARGE eine Bachelorarbeit in \LaTeX}
+     \end{flushright}
+     
+     \vspace{3cm}
+     \large
+     \begin{tabbing}
+         xxxxxxxxxxxxxxxx \= \kill
+         Autor: \> Vorname Nachname \\
+         Matrikel-Nr.: \> xxxxxxx \\
+         Studiengang: \> Maschinenbau \\ [0.5cm]
+         Erstprüfer: \> Prof. Dr. Ute Mustermann \\
+         Zweitprüfer: \> Prof. Dr. Max Mustermann \\ [0.5cm]
+         Abgabedatum: \> 12.02.2021 \\
+     \end{tabbing}
+     
+     \vspace{0.5cm}
+     \small
+     \begin{center}
+         Hochschule Beispiel $\cdot$ 
+         Fachbereich Beispiel $\cdot$ 
+         Abteilung Beispiel \\
+         Musterstraße 8 $\cdot$ 
+         12345 Musterstadt $\cdot$ 
+         http://www.\_\_\_\_\_.de
+     \end{center}
+     
+\end{titlepage}
+\newpage
+
+\pagenumbering{roman}
+
+\tableofcontents
+\cleardoublepage
+
+\addcontentsline{toc}{chapter}{Abbildungsverzeichnis}
+\listoffigures
+\cleardoublepage
+
+\addcontentsline{toc}{chapter}{Tabellenverzeichnis}
+\listoftables
+\cleardoublepage
+ 
+\printnomenclature
+\cleardoublepage
+ 
+\nomenclature[]{$\alpha$}{Drehwinkel um die $x$-Achse}
+\nomenclature[]{$\beta$}{Drehwinkel um die $y$-Achse}
+\nomenclature[]{$\gamma$}{Drehwinkel um die $z$-Achse}
+\nomenclature[]{$\vec{F}$}{Kraft}
+\nomenclature[]{$\vec{v}$}{Geschwindigkeit}
+
+ 
+\chapter*{Abkürzungen}
+\addcontentsline{toc}{chapter}{Abkürzungen}
+\begin{acronym}
+     \acro{cnc}[CNC]{Computerized Numerical Control}
+     \acro{sps}[SPS]{Speicherprogrammierbare Steuerung}
+\end{acronym}
+\cleardoublepage
+ 
+\pagenumbering{arabic}
+
+\chapter{Erstes Kapitel}
+Eine \ac{sps} ist $\ldots$
+
+Eine \ac{cnc} benötigt eine \ac{sps} \index{Speicherprogrammierbare Steuerung} (SPS) \index{SPS|see{Speicherprogrammierbare Steuerung}} zur $\ldots$
+
+\chapter{CAGD}
+... CAGD\index{CAGD} \cite{Farin2001} ...
+... Splines\index{CAGD!Splines} ... \cite{DIN66025}
+... \cite{Farouki2017} ...
+... 3D-Drucker\index{3D-Drucker} ... \cite{Patent3D}
+... 5G\index{5G}\footcite{Zafeiropoulos2020} ...
+
+\section{Testsection}
+\blindtext
+\blindtext
+\blindtext
+ 
+\chapter{Letztes Kapitel}
+ 
+\blindtext
+\cleardoublepage
+
+\addcontentsline{toc}{chapter}{Literaturverzeichnis}
+\printbibliography
+\cleardoublepage
+
+\renewcommand{\indexname}{Stichwortverzeichnis}
+\addcontentsline{toc}{chapter}{Stichwortverzeichnis}
+\printindex
+\end{document}

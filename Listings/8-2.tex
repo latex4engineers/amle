@@ -1,0 +1,21 @@
+\documentclass[12pt,a4paper]{scrbook}
+
+\KOMAoptions{headinclude,DIV=13}
+
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{afterpage}
+\usepackage{blindtext}
+\begin{document}
+\blinddocument
+\afterpage{
+	\clearpage
+	\KOMAoptions{paper=A4,paper=landscape}
+	\KOMAoptions{footinclude,headinclude,DIV=13}
+	%\thispagestyle{empty}
+	\input{8-1-tabelle}
+	\clearpage
+	\thispagestyle{empty}
+}
+\blinddocument
+\end{document}

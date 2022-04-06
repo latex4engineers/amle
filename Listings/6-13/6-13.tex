@@ -1,0 +1,15 @@
+\documentclass[12pt,a5paper]{article}
+\thispagestyle{empty}
+\usepackage[left=2.00cm, right=2.00cm, top=2.00cm, bottom=2.00cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[
+style=authoryear,
+]{biblatex}
+\addbibresource{meine-literatur.bib}
+\begin{document}
+Das Buch \citetitle*{Oechsner.2015}, geschrieben von 
+\citeauthor{Oechsner.2015}, wurde \citeyear{Oechsner.2015} veröffentlicht. 
+\Citeauthor*{Oechsner.2015} geben ...
+%\printbibliography
+\end{document}

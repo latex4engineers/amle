@@ -1,0 +1,23 @@
+\documentclass[12pt,a4paper]{scrbook}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\definecolor{MeinKommentarGruen}{HTML}{118800}
+
+\begin{document}
+	
+\lstset{
+	numbers=left,
+	stepnumber=2,
+	keywordstyle=\color{blue},
+	commentstyle=\color{MeinKommentarGruen},
+	stringstyle=\color{red},
+	captionpos=b
+}
+
+\lstinputlisting[language={c++}, caption={Hello World in C++}, label=lst:hello-world-cpp]{hello-world.cpp}
+
+\end{document}

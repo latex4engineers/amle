@@ -1,0 +1,49 @@
+\documentclass[12pt,a5paper]{scrbook}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{graphicx}
+\usepackage[includefoot]{geometry}
+\geometry{left=2.00cm, right=2.00cm, top=2.00cm, bottom=2.00cm}
+\pagestyle{empty}
+
+\usepackage{hyperref} 
+\hypersetup{
+	%colorlinks=true,
+	linkbordercolor={1 0 0},
+	citebordercolor={0 1 0},
+	%filebordercolor={1 0 1},
+	runbordercolor={1 0 1},
+	urlbordercolor={0 0 1},
+}
+
+\begin{filecontents}{literatur.bib}
+@book{Ochsner.2015,
+	author = {{\"O}chsner, Marco and {\"O}chsner, Andreas},
+	year = {2015},
+	title = {{Das Textverarbeitungssystem LaTeX: Eine praktische Einf{\"u}hrung in die Erstellung wissenschaftlicher Dokumente}},
+	address = {Wiesbaden},
+	publisher = {{Springer Vieweg}},
+	isbn = {9783658095024}
+}
+\end{filecontents}
+
+\usepackage[style=alphabetic]{biblatex}
+\addbibresource{literatur.bib}
+
+\begin{document}
+	
+	\chapter{Kapitel}
+	
+	\section{Abschnitt}\label{sec:Abschnitt}
+	
+	Verweis auf dieses Kapitel \ref{sec:Abschnitt}
+	
+	Fußnote\footnote{http://www.springer.de}
+	
+	Website (\url{http://www.springer.de})
+	
+	Zitieren von Literatur \cite{Ochsner.2015}
+	
+	Datei \href{run:./12-2.tex}{12-2.tex}
+	
+\end{document}

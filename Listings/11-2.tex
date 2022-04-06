@@ -1,0 +1,41 @@
+\documentclass[12pt,a5paper]{scrbook}
+\usepackage{geometry}
+\geometry{left=2.00cm, right=2.00cm, top=2.00cm, bottom=2.00cm}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\pagestyle{empty}
+
+\usepackage{xcolor}
+\usepackage{listings}
+
+\lstset{
+	language=C,
+	basicstyle=\small,
+	keywordstyle=\bfseries, 
+	commentstyle=\color{gray}, 
+	stringstyle=\ttfamily, 
+	showstringspaces=false,
+	frame=single, 
+	numbers=left, 
+	numberstyle=\tiny, 
+	stepnumber=2, 
+	numbersep=5pt, 
+	captionpos=b, 
+	emphstyle=\bfseries\underbar,
+	morekeywords={printf}
+}
+
+\begin{document}
+	
+\begin{lstlisting}[caption={Hello World in C}, label=lst:hello-world,emph={main}]
+#include <stdio.h>
+// Beispiel: Hello World in C
+int main()
+{
+ printf("Hello world!\n");
+ return 0;
+}
+\end{lstlisting}
+
+\end{document}
+

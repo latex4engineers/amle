@@ -1,0 +1,19 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{graphicx}
+\usepackage{geometry}
+\geometry{left=2.00cm, right=2.00cm, top=2.00cm, bottom=2.00cm}
+\pagestyle{empty}
+
+\usepackage{pgfplots}
+
+\begin{document}
+
+\begin{tikzpicture}
+	\begin{axis}
+		\addplot3[surf,domain=-10:10,samples=50]{x*sin(deg(x))+y*cos(deg(y))};
+	\end{axis}
+\end{tikzpicture}
+
+\end{document}

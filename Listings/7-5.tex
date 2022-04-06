@@ -1,0 +1,15 @@
+\documentclass[12pt,a4paper]{scrbook}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{makeidx}
+\makeindex
+\begin{document}
+\tableofcontents
+\chapter{Erstes Kapitel}
+Eine Speicherprogrammierbare Steuerung\index{Speicherprogrammierbare Steuerung} (SPS) \index{SPS|see{Speicherprogrammierbare Steuerung}} ist ... 
+Eine Computerized Numerical Control\index{Computerized Numerical Control} (CNC) \index{CNC|seealso{Computerized Numerical Control}} ist ... 
+Ein Synchronmotor \index{Motor!Synchronmotor} und ein Asynchronmotor \index{Motor!Asynchronmotor} ...
+\renewcommand{\indexname}{Stichwortverzeichnis} 
+\addcontentsline{toc}{chapter}{Stichwortverzeichnis}
+\printindex
+\end{document}

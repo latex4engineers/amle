@@ -1,0 +1,23 @@
+\documentclass[12pt,a4paper,final]{scrbook}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+
+\usepackage{tabularx}
+
+\begin{document}
+\chapter{Einführung}
+In der Tablelle~\ref{VergleichAFS} werden einige Komponenten von Autos, Flugzeugen und Schiffen aufgelistet.
+
+\begin{table}[htb]
+\centering
+\begin{tabularx}{10cm}{XXX}
+	Auto    & Flugzeug    & Schiff \\
+	Lenkrad & Cockpit     & Ruder \\
+	Räder   & Tragflächen & Rumpf \\
+	Motor   & Turbinen-Strahltriebwerk & Schiffsmotor \\
+\end{tabularx} 
+\caption{Vergleich von Auto, Flugzeug und Schiff}
+\label{VergleichAFS}
+\end{table} 
+
+\end{document}
