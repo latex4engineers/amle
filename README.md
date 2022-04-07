@@ -2,8 +2,7 @@
 
 Autoren: Marcel Müller & Elmar Wings
 
-![Book cover](https://media.springernature.com/w306/springer-static/cover-hires/book/978-3-658-34430-6)
-
+<img src="Abschlussarbeiten-mit-LaTeX-erstellen_Cover.jpg" width="10%" height="10%">
 
 
 ## Beschreibung zum Buch
