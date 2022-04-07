@@ -2,7 +2,7 @@
 
 Autoren: Marcel Müller & Elmar Wings
 
-<img src="Abschlussarbeiten-mit-LaTeX-erstellen_Cover.jpg" width="10%" height="10%">
+<img src="Abschlussarbeiten-mit-LaTeX-erstellen_Cover.jpg" width="20%" height="20%">
 
 
 ## Beschreibung zum Buch
